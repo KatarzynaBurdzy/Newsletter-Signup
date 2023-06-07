@@ -1,5 +1,7 @@
+//jshint esversion: 6
+
 const express = require("express");
-const request = require("request");
+const https = require("https");
 const bodyParser = require("body-parser");
 
 const app = express();
@@ -11,4 +13,6 @@ app.get("/", function (req, res) {
   res.sendFile(__dirname + "/signup.html");
 });
 
-app.listen(PORT, () => console.log(`Server up and running on port ${PORT}`));
+app.listen(PORT, function () {
+  console.log(`Server up and running on port ${PORT}`);
+});
