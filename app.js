@@ -17,6 +17,3 @@ app.listen(PORT, function () {
   console.log(`Server up and running on port ${PORT}`);
 });
 
-function x(){
-  console.log('ja');
-}
